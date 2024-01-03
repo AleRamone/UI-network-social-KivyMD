@@ -1,0 +1,38 @@
+<CircularAvatarImage>
+
+    size_hint: None, None
+    size: 300, 200
+    elevation: 0
+
+    MDRelativeLayout:
+        size_hint: None, None
+        size: 300, 200
+
+        Circle:
+            radius: [90,]
+            size: 88, 88
+            md_bg_color: 1,0,0,1
+
+        Circle:
+            radius: [90,]
+            size: 88, 88
+            md_bg_color: 1,1,1,1
+
+        FitImage:
+            source: root.avatar
+            size_hint: None, None
+            size: 300, 300
+            radius: [300,]
+             post_hint: {"center_x" : 0.5, "center_y" : 0.6}
+
+        #username
+        MDLabel:
+            text: root.name
+            halign: 'center'
+            post_hint:{"center_x" : 0.5, "center_y" : 0.1}
+            font_size: 11
+            theme_text_color: 'Custom'
+            text_color: 0, 0, 0, 1
+
+
+
